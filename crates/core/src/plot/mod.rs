@@ -41,12 +41,12 @@ use self::data::sleep_time_for_tps;
 use self::scoreboard::Scoreboard;
 
 /// The width of a plot (2^n)
-pub const PLOT_SCALE: u32 = 4;
+pub const PLOT_SCALE: u32 = 8;
 
 /// The width of a plot counted in chunks
 pub const PLOT_WIDTH: i32 = 2i32.pow(PLOT_SCALE);
 /// The plot width in blocks
-pub const PLOT_BLOCK_WIDTH: i32 = PLOT_WIDTH * 16;
+pub const PLOT_BLOCK_WIDTH: i32 = PLOT_WIDTH * 32;
 pub const NUM_CHUNKS: usize = PLOT_WIDTH.pow(2) as usize;
 
 /// The height of the world in sections (Default: 16, Max: 127)
